@@ -36,9 +36,14 @@ body{
 }
 
 .tittle{
-   font-size: var(lg);
+   font-size: var(--lg);
    margin-bottom: 12px;
    text-align: center; 
+}
+
+.tittle-account{
+    display: flex;
+    text-align: start;
 }
 
 .subtitke{
@@ -51,6 +56,12 @@ body{
 }
 
 .form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form div{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -79,6 +90,10 @@ body{
     padding: 6px;
     margin-bottom: 12px;
 
+}
+
+.input-name, .input-passw{
+    margin-bottom: 22px;
 }
 
 .input-email{
@@ -137,7 +152,14 @@ body{
         position: absolute;
         bottom: 20px;
         width: inherit; 
-      }
+    }
+    .form{
+        height: 100%;
+        
+    }
+    .form-container{
+        height: 100%;
+    }
 }
 
 .resend{
@@ -151,4 +173,10 @@ body{
 .resend a {
     color: var(--hospital-green);
     text-decoration: none;
+}
+
+.value{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
 }
